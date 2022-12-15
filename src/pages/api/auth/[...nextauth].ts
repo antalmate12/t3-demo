@@ -4,6 +4,8 @@ import AppleProvider from "next-auth/providers/apple";
 import OAuthProvider from "next-auth/providers/auth0";
 import GithubProvider from "next-auth/providers/github";
 
+import "./auth.scss";
+
 // Prisma adapter for NextAuth, optional and can be removed
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 
