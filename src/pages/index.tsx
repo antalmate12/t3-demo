@@ -63,7 +63,7 @@ const AuthShowcase: React.FC = () => {
 
   const { data: secretMessage } = trpc.auth.getSecretMessage.useQuery(
     undefined, // no input
-    { enabled: sessionData?.user !== undefined },
+    { enabled: sessionData?.user !== undefined }
   );
 
   return (
@@ -78,6 +78,9 @@ const AuthShowcase: React.FC = () => {
       >
         {sessionData ? "Sign out" : "Sign in"}
       </button>
+      <Link className="text-xl font-bold text-white" href={"/demo"}>
+        Go to <span className="underline">DEMO</span>
+      </Link>
     </div>
   );
 };
